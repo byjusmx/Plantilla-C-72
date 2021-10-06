@@ -31,12 +31,12 @@ export default class EnterDetails extends React.Component {
             profile:''
         })
 
-        //display an alert using ToastAndroid
+        //muestra una alerta usando ToastAndroid
         
-        //ToastAndroid.show('Your profile has been submitted', SHORT)
-        //ToastAndroid.show('Your profile has been submitted', ToastAndroid.SHORT)
-        //show('Your profile has been submitted', ToastAndroid.SHORT)
-        //ToastAndroid.Alert('Your profile has been submitted', ToastAndroid.SHORT)
+        //ToastAndroid.show('Tu pérfil ha sido enviado', SHORT)
+        //ToastAndroid.show('Tu pérfil ha sido enviado', ToastAndroid.SHORT)
+        //show('Tu pérfil ha sido enviado', ToastAndroid.SHORT)
+        //ToastAndroid.Alert('Tu pérfil ha sido enviado', ToastAndroid.SHORT)
     }
 
     render(){
@@ -46,12 +46,12 @@ export default class EnterDetails extends React.Component {
                <Header 
                     backgroundColor = {'#A1C181'}
                      centerComponent = {{
-                        text : 'JOB PORTAL',
+                        text : 'PORTAL LABORAL',
                         style : { color: 'black', fontSize: 25,fontWeight:'BOLD'}
                     }}
                 />
                 <TextInput 
-                    placeholder="Name"
+                    placeholder="Nombre"
                     onChangeText= {(text)=>{
                         this.setState({
                             name: text
@@ -61,7 +61,7 @@ export default class EnterDetails extends React.Component {
                     value={this.state.name}
                     style={styles.title}/>
                 <TextInput
-                    placeholder="E-mail"
+                    placeholder="Correo electrónico"
                    
                     onChangeText= {(text)=>{
                         this.setState({
@@ -72,7 +72,7 @@ export default class EnterDetails extends React.Component {
                     value={this.state.email}
                     style={styles.author} />
                     <TextInput 
-                    placeholder="Contact Number"
+                    placeholder="Número de contacto"
                     onChangeText={(text)=>{
                       this.setState({
                         contact:text
@@ -83,7 +83,7 @@ export default class EnterDetails extends React.Component {
                     style={styles.author}
                     />
                 <TextInput 
-                    placeholder="Explain your Profile in Detail "
+                    placeholder="Explica tu pérfil a detalle "
                     onChangeText= {(text)=>{
                         this.setState({
                             profile: text
@@ -98,7 +98,7 @@ export default class EnterDetails extends React.Component {
                     style={styles.submitButton}
                     onPress={this.submitProfile}
                     >
-                    <Text style={styles.buttonText}>Submit</Text>
+                    <Text style={styles.buttonText}>Enviar</Text>
                 </TouchableOpacity>
             </KeyboardAvoidingView>
         );
