@@ -2,7 +2,7 @@ import firebase from 'firebase'
 require("@firebase/firestore")
 
 
-// Initialize Firebase
+// Inicializa Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyDwTvs7rxKaGVKtT_dANHq3fpehOBheBkI",
   authDomain: "job-portal-27490.firebaseapp.com",
@@ -12,7 +12,7 @@ const firebaseConfig = {
   appId: "1:370794309267:web:22fef414b75da1a8554f66"
 };
 
-// Initialize Firebase
+// Inicializa Firebase
 if(!firebase.apps.length)
 firebase.initializeApp(firebaseConfig);
 
